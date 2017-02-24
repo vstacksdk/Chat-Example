@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#select_logging_user {
+    height: 30px;
+    padding: 5px;
+}
+
+#conversations {
+    display: inline-block;
+    width: 300px;
+    height: calc(100% - 30px);
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+#conversations .conversation {
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+#conversations .conversation:hover {
+    background-color: #ccc;
+}
+
+#messages_block {
+    display: inline-block;
+    width: calc(100% - 305px);
+    height: calc(100% - 30px);
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+#messages_block #messages {
+    height: calc(100% - 30px);
+    width: 100%;
+    overflow-y: auto;
+}
+
+#messages_block #messages .message {
+    padding: 5px;
+}
+
+#messages_block #inputs {
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
